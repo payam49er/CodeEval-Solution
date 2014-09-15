@@ -54,9 +54,9 @@ namespace NiceAngles
         static
             void Main(string[] args)
         {
-            //Console.WriteLine("Please insert the path to the file containing data:");
-            //var path = Console.ReadLine();
-            var path = @"C:\Users\payam\Documents\seconds.txt";
+            Console.WriteLine("Please insert the path to the file containing data:");
+            var path = Console.ReadLine();
+           
             ConvertToMinSec(path);
 
             Console.Read();
