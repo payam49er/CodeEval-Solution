@@ -51,13 +51,41 @@ namespace NiceAngles
             }
         }
 
+        public static void ConvertToMinSecFaster(string path)
+        {
+            using (StreamReader reader = File.OpenText(path))
+            {
+                while (!reader.EndOfStream)
+                {
+                    var lineValue = reader.ReadLine();
+                    if (!string.IsNullOrEmpty(lineValue))
+                    {
+                        double degree = Convert.ToDouble(lineValue);
+                        int degrees = (int) degree;
+                        degree = 60*(degree - degrees);
+                        int minutes = (int) degree;
+                        degree = 60*(degree - minutes);
+                        int seconds = (int) degree;
+                        var report = string.Format("{0}.{1:00}'{2:00}\"", degrees, minutes, seconds);
+                        Console.WriteLine(report);
+                    }
+                }
+            }
+        }
+
         static
             void Main(string[] args)
         {
-            Console.WriteLine("Please insert the path to the file containing data:");
-            var path = Console.ReadLine();
+           // Console.WriteLine("Please insert the path to the file containing data:");
+           // var path = Console.ReadLine();
+
+            var path = @"C:\Users\payam\Documents\seconds.txt";
            
             ConvertToMinSec(path);
+
+            Console.WriteLine("Easier process");
+
+            ConvertToMinSecFaster(path);
 
             Console.Read();
         }
