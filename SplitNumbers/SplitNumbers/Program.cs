@@ -22,7 +22,7 @@ namespace SplitNumbers
                         StringBuilder leftNumber = new StringBuilder();
                         StringBuilder rightNumber = new StringBuilder();
                         string operationType = null;
-                        int opertionPos = 0;
+                        int operationPos = 0;
                         for (int i = 0; i < pattern.Length; i++)
                         {
                             if (char.IsLetter(pattern[i]))
@@ -32,12 +32,12 @@ namespace SplitNumbers
                             else
                             {
                                 operationType = pattern[i].ToString();
-                                opertionPos = i;
+                                operationPos = i;
                                 break;
                             }
                         }
 
-                        for (int i = opertionPos; i < pattern.Length-1; i++)
+                        for (int i = operationPos; i < pattern.Length-1; i++)
                         {
                             rightNumber.Append(numbers[i]);
                         }
