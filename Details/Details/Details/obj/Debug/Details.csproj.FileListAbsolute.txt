@@ -1,0 +1,5 @@
+C:\Users\payam\Documents\Code\CodeEval-Solution\Details\Details\Details\bin\Debug\Details.exe
+C:\Users\payam\Documents\Code\CodeEval-Solution\Details\Details\Details\bin\Debug\Details.pdb
+C:\Users\payam\Documents\Code\CodeEval-Solution\Details\Details\Details\obj\Debug\Details.csprojResolveAssemblyReference.cache
+C:\Users\payam\Documents\Code\CodeEval-Solution\Details\Details\Details\obj\Debug\Details.exe
+C:\Users\payam\Documents\Code\CodeEval-Solution\Details\Details\Details\obj\Debug\Details.pdb
